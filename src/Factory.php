@@ -1,6 +1,6 @@
 <?php
 
-namespace Cron;
+namespace Osi\Cron;
 
 class Factory
 {
