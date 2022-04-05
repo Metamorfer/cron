@@ -2,22 +2,17 @@
 
 namespace Cron;
 
-use Cron\CronExpression;
 use DateTime;
+use Cron\CronExpression;
 
 class Job implements JobInterface
 {
-    /**
-     * @var string
-     */
-    protected $expression;
+    protected string $expression;
 
     /**
      * @var mixed
      */
     protected $data;
-
-
 
     /**
      * @param mixed $data
@@ -27,8 +22,6 @@ class Job implements JobInterface
         $this->expression = $expression;
         $this->data       = $data;
     }
-
-
 
     public function getExpression() : string
     {
@@ -42,8 +35,6 @@ class Job implements JobInterface
     {
         return $this->data;
     }
-
-
 
     public function isDue(DateTime $datetime = null) : bool
     {

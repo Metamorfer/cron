@@ -11,8 +11,6 @@ class Manager implements ManagerInterface
      */
     protected $jobs = [];
 
-
-
     public function add(JobInterface $job)
     {
         $this->jobs[] = $job;
