@@ -1,0 +1,36 @@
+{
+    "name":        "objectsystems/cron",
+    "description": "Cron manager. Forked for the needs of PHP 8.0+ projects",
+    "type":        "library",
+    "license":     "MIT",
+
+    "authors": [
+        {
+            "name":     "Sid Roberts",
+            "email":    "sid@sidroberts.co.uk",
+            "homepage": "https://sidroberts.co.uk",
+            "role":     "Developer"
+        }
+    ],
+
+    "require": {
+        "php": "8.0.*",
+
+        "dragonmantank/cron-expression": "v3.3.1"
+    },
+
+    "require-dev": {
+        "codeception/codeception": "*",
+        "codeception/module-asserts": "*",
+
+        "squizlabs/php_codesniffer": "*"
+    },
+
+
+
+    "autoload": {
+        "psr-4": {
+            "Sid\\Cron\\": "src/"
+        }
+    }
+}
